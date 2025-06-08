@@ -27,7 +27,7 @@ Este es el backend de la prueba técnica para INNOVARYX y permite gestionar pres
 Se utilizó una arquitectura en capas para mantener la separación de responsabilidades:
 
 **1. Modelo (Entidad)**
-Define la estructura del objeto Presupuesto, que contiene campos como: ID, nombre del proyecto, monto total, fecha de creación y estado.
+Define la estructura del objeto Presupuesto, que contiene campos como: ID, nombre, monto total, fecha de creación y estado.
 
 **2. Repositorio**
 Interfaz que extiende JpaRepository para obtener automáticamente métodos CRUD sin necesidad de implementarlos manualmente.
