@@ -55,9 +55,12 @@ DELETE /presupuestos/{id}
 
 ##  Componentes
 
-###FormularioPresupuesto.jsx
+### FormularioPresupuesto.jsx
+
 Formulario para crear o editar un presupuesto.
+
 Campos:
+
 Id
 
 Nombre
@@ -70,9 +73,9 @@ Estado
 
 Envía los datos al backend usando Axios.
 
-###ListaPresupuestos.jsx
+### ListaPresupuestos.jsx
+
 Tabla que muestra todos los presupuestos en un listado o de manera indicidual por el Id.
+
 Incluye botones para editar y eliminar presupuestos.
 
-###  Estilos
-El proyecto incluye estilos básicos con CSS
