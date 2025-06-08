@@ -21,6 +21,9 @@ const FormularioPresupuesto = ({ onPresupuestoCreado }) => {
     const handleSubmit = e => {
         e.preventDefault();
 
+        setError(null);
+        setExito(null);
+
         if(!formulario.id || !formulario.nombre || !formulario.fecha || !formulario.montoTotal){
             setError("Llene todos los campos");
             return;
@@ -29,7 +32,6 @@ const FormularioPresupuesto = ({ onPresupuestoCreado }) => {
         axios.post("http://localhost:8080/presupuestos", formulario)
         .then(response => {
             setExito("Presupuesto creado exitosamente");
-            setError(null);
             setFormulario({
                 id:"",
                 nombre: "" ,
@@ -45,7 +47,7 @@ const FormularioPresupuesto = ({ onPresupuestoCreado }) => {
         .catch(error => {
             console.error(error);
             setError("Error al crear presupuesto");
-            setExito(null);
+            
         });
 
         
